@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Homework Helper",
+  "version": "1.0",
+  "author": "Alex Janeway",
+  "description": "A Chrome Extension that provides the user help with answering problems.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources" : [
+    {
+      "resources": ["assets/close.png",
+                    "assets/close(1).png",
+                    "assets/download.png",
+                    "assets/send.png",
+                    "assets/help.png",
+                    "assets/robot.png"],
+      "matches" : ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/icon.png",
+      "24": "assets/icon.png",
+      "32": "assets/icon.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Homework Helper"
+  },
+
+  "host_permissions": ["<all_urls>"]
+}

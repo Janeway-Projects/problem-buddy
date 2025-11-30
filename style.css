@@ -1,0 +1,65 @@
+.container {
+  width: 288px;
+  color: #314d3e;
+  background-color: #314d3e;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(211, 230, 246);
+  padding: 5px;
+}
+
+.submitbox {
+  margin: 5px 5px;
+  padding: 8px;
+  background-color: rgb(211, 230, 246);
+}
+
+.bookmark {
+  display: flex;
+  border-bottom-color: #00254d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 0.8rem;
+  padding: 3px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.chatbox-title {
+  padding-left: 2px;
+  width: 180px;
+}
+
+.chatbox-controls img {
+  margin: 0 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.chatbox-bottom {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.chatbox {
+  width: 200px;
+  height: 300px;
+  border: 5px solid black;
+}
+
+.chatbox-middle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.chatbox-top {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+}
